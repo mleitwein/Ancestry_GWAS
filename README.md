@@ -10,7 +10,7 @@ The software is provided "as is", without warranty of any kind, express or impli
 
 ## Imputation & phasing
 
-Fimpute_AquaExcel_PipeLine.sh
+01_Fimpute_AquaExcel_PipeLine.sh
 
 
 ## Ancestry analysis with Lotter
@@ -29,11 +29,11 @@ Fimpute_AquaExcel_PipeLine.sh
 
 ## GLM models 
 
-GLM_ancestry_rec.R
+02_GLM_ancestry_rec.R
 			
 ## Gwas with ancestry 
 	#GEMMA file and run
-	Gwas_ancestry.sh	
+	03_Gwas_ancestry.sh	
 	#plot
 	01_utility_script/script_gemma_qqplot_manhattan_plot.R
 
