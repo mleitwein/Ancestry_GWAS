@@ -90,7 +90,7 @@ RES_GWAS %>%
 
 ### QTL ###
 # QTL ancestry ATL 
-RES_GWAS_ATL <- as.data.frame(fread("gwas_univariate_gras_Haplo_mod7.assoc.txt" , header=T,sep="\t",stringsAsFactors = F)) %>%
+RES_GWAS_ATL <- as.data.frame(fread("gwas_univariate_gras_Haplo_mod9.assoc.txt" , header=T,sep="\t",stringsAsFactors = F)) %>%
   dplyr::mutate(log10_pval = -log10(p_wald),
                 chr_LG=sapply(strsplit(rs, split='_', fixed=TRUE), function(x) (x[1])),
                 chisq = qchisq(.$p_wald,df=1,lower.tail = F)) 
